@@ -13,6 +13,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 if(!q) return reply ("Please give me url or tittle)    
 const search = await yts(q)
+const data = search.videos[0];
+const url = data.url
+
+let desc = `
+
+`
     
     
 }catch(e){
