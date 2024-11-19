@@ -17,9 +17,17 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
+🎧 *PASIDU-MD SONG DOWNLOADER* ✨
 
+title: ${data.title}
+description: ${data.description}
+time: ${data.timestamp}
+ago: ${data.ago}
+views: ${data.views}
+
+MADE BY PASIDU-MD
 `
-    
+await conn.sendMessage(from,{image:{url:data   
     
 }catch(e){
 console.log(e)
