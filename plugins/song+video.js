@@ -25,10 +25,14 @@ time: ${data.timestamp}
 ago: ${data.ago}
 views: ${data.views}
 
-MADE BY PASIDU-MD
+> MADE BY PASIDU-MD
 `
-await conn.sendMessage(from,{image:{url:data   
-    
+await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{quoted:mek}):   
+
+//download audio 
+
+let down = await fg.yta(url)
+let downloadUrl = down.dl_url    
 }catch(e){
 console.log(e)
 reply(`${e}`)
